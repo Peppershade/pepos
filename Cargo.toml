@@ -20,7 +20,7 @@ wayland-protocols = { version = "0.32", features = ["client"] }
 wayland-protocols-wlr = { version = "0.3", features = ["client"] }
 
 # Smithay (compositor)
-smithay = { version = "0.3", features = ["desktop", "renderer_gl", "backend_drm", "backend_libinput"] }
+smithay = { version = "0.3", features = ["renderer_gl", "backend_drm", "backend_libinput", "backend_winit", "wayland_frontend", "xwayland"] }
 
 # Rendering
 tiny-skia = "0.11"          # 2D rendering (paths, fills, text backgrounds)
