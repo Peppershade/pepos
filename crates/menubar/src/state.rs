@@ -7,7 +7,7 @@
 use wayland_client::{
     protocol::{
         wl_buffer::{self, WlBuffer},
-        wl_compositor::WlCompositor,
+        wl_compositor::{self, WlCompositor},
         wl_registry::{self, WlRegistry},
         wl_shm::{self, WlShm},
         wl_shm_pool::{self, WlShmPool},
