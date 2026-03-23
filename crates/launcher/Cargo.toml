@@ -1,0 +1,17 @@
+[package]
+name = "pepos-launcher"
+description = "Spotlight-style app launcher for the pepos desktop"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+wayland-client.workspace = true
+wayland-protocols.workspace = true
+wayland-protocols-wlr.workspace = true
+tiny-skia.workspace = true
+fontdue.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+serde.workspace = true
+toml.workspace = true

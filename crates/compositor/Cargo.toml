@@ -1,0 +1,13 @@
+[package]
+name = "pepos-compositor"
+description = "Wayland compositor for the pepos desktop"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+smithay.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+serde.workspace = true
+toml.workspace = true

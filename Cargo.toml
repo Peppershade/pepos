@@ -1,0 +1,45 @@
+[workspace]
+members = [
+    "crates/compositor",
+    "crates/menubar",
+    "crates/dock",
+    "crates/launcher",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["pepos"]
+license = "MIT"
+
+[workspace.dependencies]
+# Wayland client (for bar, dock, launcher)
+wayland-client = "0.31"
+wayland-protocols = { version = "0.32", features = ["client"] }
+wayland-protocols-wlr = { version = "0.3", features = ["client"] }
+
+# Smithay (compositor)
+smithay = { version = "0.3", features = ["desktop", "renderer_gl", "backend_drm", "backend_libinput"] }
+
+# Rendering
+tiny-skia = "0.11"          # 2D rendering (paths, fills, text backgrounds)
+fontdue = "0.9"             # Font rasterization
+
+# Shared memory buffers
+memmap2 = "0.9"
+tempfile = "3"
+
+# Time (for the clock)
+chrono = { version = "0.4", features = ["clock"] }
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Config
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"

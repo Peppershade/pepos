@@ -1,0 +1,29 @@
+# pepos desktop configuration
+
+[menubar]
+height = 28            # pixels
+font = "Inter"
+font_size = 13.0
+background = "#1a1a1a"
+foreground = "#e8e8e8"
+accent = "#5e9bff"
+
+[dock]
+icon_size = 52         # pixels
+padding = 8
+background = "#1a1a1a"
+corner_radius = 16
+autohide = false
+
+[launcher]
+width = 640
+max_results = 8
+background = "#1a1a1a"
+foreground = "#e8e8e8"
+accent = "#5e9bff"
+corner_radius = 12
+
+[compositor]
+gaps = 0               # pixels between windows and screen edges
+animations = true
+animation_duration_ms = 180
