@@ -1,7 +1,7 @@
 // Draws the launcher panel: a search input at the top, results list below.
 
 use fontdue::{Font, FontSettings};
-use tiny_skia::{Color, FillRule, Paint, PathBuilder, Pixmap, Rect, Transform};
+use tiny_skia::{Color, Paint, Pixmap, Rect, Transform};
 
 use crate::apps::App;
 use crate::config::{hex_to_rgba, Config};
